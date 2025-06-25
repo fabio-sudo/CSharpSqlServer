@@ -26,6 +26,8 @@ namespace Apresentacao
             //dgvCurso.DataSource = null;
             //dgvCurso.DataSource = listaCurso;
 
+
+            //Manualmente
             dgvCurso.Rows.Clear(); // Limpa as linhas atuais
 
             foreach (var curso in listaCurso)
@@ -67,7 +69,7 @@ namespace Apresentacao
         //Selecionar Curso 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            if(dgvCurso.SelectedRows.Count > 0)
+            if (dgvCurso.SelectedRows.Count > 0)
             {
                 // Pega a primeira linha selecionada
                 DataGridViewRow linhaSelecionada = dgvCurso.SelectedRows[0];
@@ -78,11 +80,30 @@ namespace Apresentacao
                 // Busca o curso na lista pelo Id
                 Curso cursoSelecionado = listaCurso.FirstOrDefault(c => c.Id == idSelecionado);
 
-                if(cursoSelecionado != null) { //Chama o formulario de alterar excluir
-                                                }
-                    
-            } 
+                if (cursoSelecionado != null)
+                { //Chama o formulario de alterar excluir
 
+                    FrmCurso frmCurso = new FrmCurso(TipoOperacao.Alterar, cursoSelecionado);
+                    
+                    DialogResult result =
+                    frmCurso.ShowDialog();
+
+                    if (result == DialogResult.Yes) { btnBuscarCurso.PerformClick(); }
+                }
+
+            }
+
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+
+            FrmCurso frmCurso = new FrmCurso(TipoOperacao.Inserir, null);
+
+            DialogResult result =
+            frmCurso.ShowDialog();
+
+            if (result == DialogResult.Yes) { btnBuscarCurso.PerformClick(); }
         }
         #endregion
 
@@ -125,12 +146,17 @@ namespace Apresentacao
 
                 if (cursoSelecionado != null)
                 {
-                    // Aqui você pode usar o objeto como quiser
+
+                    FrmCurso frmCurso = new FrmCurso(TipoOperacao.Alterar, cursoSelecionado);
+
+                    DialogResult result =
+                    frmCurso.ShowDialog();
+
+                    if (result == DialogResult.Yes) { btnBuscarCurso.PerformClick(); }
 
                 }
             }
         }
-
 
 
     }

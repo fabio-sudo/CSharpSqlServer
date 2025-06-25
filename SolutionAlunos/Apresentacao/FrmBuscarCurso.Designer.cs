@@ -154,6 +154,7 @@
             btnInserir.TabIndex = 4;
             btnInserir.Text = "&F10 Inserir";
             btnInserir.UseVisualStyleBackColor = false;
+            btnInserir.Click += btnInserir_Click;
             // 
             // btnSelecionar
             // 
@@ -174,7 +175,7 @@
             // 
             // btnSair
             // 
-            btnSair.BackColor = Color.Red;
+            btnSair.BackColor = Color.IndianRed;
             btnSair.FlatAppearance.MouseDownBackColor = Color.CornflowerBlue;
             btnSair.FlatStyle = FlatStyle.Flat;
             btnSair.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
@@ -195,7 +196,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(344, 392);
+            ClientSize = new Size(355, 392);
             Controls.Add(btnSair);
             Controls.Add(btnSelecionar);
             Controls.Add(btnInserir);

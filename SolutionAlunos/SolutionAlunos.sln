@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apresentacao", "Apresentacao\Apresentacao.csproj", "{43D5497D-3DF5-4737-9FE6-7D1CAE5C75CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apresentacao", "Apresentacao\Apresentacao.csproj", "{43D5497D-3DF5-4737-9FE6-7D1CAE5C75CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcessoDados", "AcessoDados\AcessoDados.csproj", "{2F9099BE-FE67-4668-9CB5-99E67393E56F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcessoDados", "AcessoDados\AcessoDados.csproj", "{2F9099BE-FE67-4668-9CB5-99E67393E56F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjetoTransferencia", "ObjetoTransferencia\ObjetoTransferencia.csproj", "{44C4E36D-09D6-463D-8385-665C35B7718F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjetoTransferencia", "ObjetoTransferencia\ObjetoTransferencia.csproj", "{44C4E36D-09D6-463D-8385-665C35B7718F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocios", "Negocios\Negocios.csproj", "{EDD52C47-BCB8-4AB1-8069-8D12FED84B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Negocios", "Negocios\Negocios.csproj", "{EDD52C47-BCB8-4AB1-8069-8D12FED84B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{8255CFF8-B89C-4767-8C2F-057701C5A7E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EDD52C47-BCB8-4AB1-8069-8D12FED84B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDD52C47-BCB8-4AB1-8069-8D12FED84B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDD52C47-BCB8-4AB1-8069-8D12FED84B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8255CFF8-B89C-4767-8C2F-057701C5A7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8255CFF8-B89C-4767-8C2F-057701C5A7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8255CFF8-B89C-4767-8C2F-057701C5A7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8255CFF8-B89C-4767-8C2F-057701C5A7E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

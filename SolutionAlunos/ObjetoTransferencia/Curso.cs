@@ -6,6 +6,8 @@
         public string NomeCurso { get; set; }
 
 
+        public Curso() { } // Construtor Vazio
+
 
         //Construtor
         public Curso(int id, string nome) {
@@ -14,5 +16,13 @@
             NomeCurso = nome;
         
         }
+    }
+
+    //Operações do Formulário
+    public enum TipoOperacao
+    {
+        Inserir,
+        Alterar,
+        Excluir
     }
 }

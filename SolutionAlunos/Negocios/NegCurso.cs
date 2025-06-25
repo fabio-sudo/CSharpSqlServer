@@ -21,10 +21,11 @@ namespace Negocios
                 string comando = "exec uspInserirCurso  @nomeCurso";
                 object resposta = sqlserver.ExecutarScalar(comando, CommandType.Text);
 
-                return Convert.ToInt32(resposta) == 1;
+                return true;
             }
             catch (Exception ex)
             {
+                return false;
                 throw new Exception("Erro ao cadastrar curso: " + ex.Message);
             }
         }
@@ -43,6 +44,7 @@ namespace Negocios
             }
             catch (Exception ex)
             {
+                return false;
                 throw new Exception("Erro ao atualizar curso. Motivo: " + ex.Message);
             }
         }
@@ -60,6 +62,7 @@ namespace Negocios
             }
             catch (Exception ex)
             {
+                return false;
                 throw new Exception("Erro ao excluir curso. Motivo: " + ex.Message);
             }
         }
